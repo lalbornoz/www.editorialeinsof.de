@@ -67,6 +67,7 @@ p:first-letter {
 div.div-content {
   background-color:       rgba(240,240,240,0.5);
   margin:                 auto;
+  min-height:             75em;
   overflow:               hidden;
   padding:                1em;
   position:               relative;
