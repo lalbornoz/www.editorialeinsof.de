@@ -1,17 +1,17 @@
 /*
  * Global styles
  */
-a:hover {
-  color:                  grey;
-  text-decoration:        underline;
-}
 a:link {
   color:                  black;
-  text-decoration:        none;
+  text-decoration:        underline;
 }
 a:visited {
   color:                  grey;
-  text-decoration:        none;
+  text-decoration:        underline;
+}
+a:hover {
+  color:                  slategray;
+  text-decoration:        underline;
 }
 body {
   background-attachment:  fixed;
@@ -53,12 +53,6 @@ p {
   font-variant:           normal;
   font-weight:            normal;
   text-align:             justify;
-  text-transform:         initial;
-}
-p:first-letter {
-  font-size:              3em;
-  line-height:            0em;
-  text-transform:         capitalize;
 }
 
 /*
@@ -120,6 +114,14 @@ img.img-right {
 /*
  * {P,HR} class styles
  */
+p.p-capitalise {
+  text-transform:         initial;
+}
+p.p-capitalise:first-letter {
+  font-size:              3em;
+  line-height:            0em;
+  text-transform:         capitalize;
+}
 p.p-center {
   text-align:             center;
 }
@@ -140,8 +142,20 @@ hr.hr-clear {
 }
 
 /*
- * Specific DIV styles
+ * Specific {A,DIV} styles
  */
+p.p-legend a:link {
+  color:                  black;
+  text-decoration:        none;
+}
+p.p-legend a:visited {
+  color:                  grey;
+  text-decoration:        none;
+}
+p.p-legend a:hover {
+  color:                  slategray;
+  text-decoration:        underline;
+}
 @media only screen and (min-device-width: 1440px) {
   #div-star9 {
     background:             rgba(240,240,240,0.4);
