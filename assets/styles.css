@@ -144,6 +144,16 @@ hr.hr-clear {
 /*
  * Specific {A,DIV} styles
  */
+a.a-capitalise {
+  display:                inline-block;
+  width:                  15em;
+  text-transform:         initial;
+}
+a.a-capitalise:first-letter {
+  font-size:              3em;
+  line-height:            0em;
+  text-transform:         capitalize;
+}
 p.p-legend a:link {
   color:                  black;
   text-decoration:        none;
